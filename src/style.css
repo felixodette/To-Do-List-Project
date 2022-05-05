@@ -1,0 +1,66 @@
+.canvas {
+  height: 600px;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  content: "\22EE";
+  color: grey;
+  right: 15px;
+  cursor: move;
+}
+
+.input-add-list {
+  border: none;
+  width: 100%;
+  height: inherit;
+}
+
+.input-add-list::placeholder {
+  font-style: italic;
+  color: dimgray;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.icon-refresh {
+  position: absolute;
+  color: grey;
+  transform: rotate(90deg);
+  right: 15px;
+}
+
+.card-footer {
+  color: dimgrey;
+  cursor: pointer;
+  text-align: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card {
+  border: dimgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 28rem;
+}
+
+input:focus { outline: none; }
+
+.complete {
+  display: none;
+}
