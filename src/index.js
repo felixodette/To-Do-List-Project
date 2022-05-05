@@ -1,6 +1,6 @@
 const list = document.querySelector('[data-task-list]');
 const tasks = [{
-  description:'wash the dishes',
+  description: 'wash the dishes',
   completed: false,
   index: 1,
 }, {
@@ -20,5 +20,4 @@ tasks.forEach((task) => {
       </label>`;
   list.appendChild(taskCard);
   task.value = '';
-
 });
