@@ -1,6 +1,6 @@
 export default class Status {
   completeTask = (array) => {
-    const checkboxes = document.querySelectorAll('[data-status]');
+    const checkboxes = document.querySelectorAll('.check-task');
     const todos = document.querySelectorAll('.todo-task');
     checkboxes.forEach((checkbox, index) => {
       checkbox.addEventListener('click', () => {

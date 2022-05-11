@@ -5,7 +5,6 @@
 
 .btnDelete {
   position: absolute;
-  content: "\22EE";
   background: none;
   border: none;
   color: grey;
@@ -23,15 +22,6 @@
   font-style: italic;
   color: dimgray;
 }
-
-/*.checkmark {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  height: 25px;*/
-/*  width: 25px;*/
-/*  background-color: #eee;*/
-/*}*/
 
 .icon-refresh {
   position: absolute;
@@ -58,6 +48,7 @@
 
 .card {
   border: dimgrey;
+  background: transparent none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 28rem;
 }
@@ -68,28 +59,19 @@ input:focus { outline: none; }
   border: none;
 }
 
-.fa-check::before {
-  display: none;
-}
-
-.fa-check::after {
-  display: inline-flex;
-  position: absolute;
-  color: dodgerblue;
-  left: 8%;
-  color: dodgerblue;
-}
-
-.todo-task.active .fa-check {
-  display: block;
+.list-group {
+  background-color: transparent;
 }
 
 .todo-task.active .fa-square {
   display: none;
+  background-color: transparent;
 }
 
-.todo-task.active .todo-input {
+.todo-task.active .todo-item {
   text-decoration: line-through;
+  background-color: #0d6efd;
+  color: white;
 }
 
 button {
@@ -103,3 +85,18 @@ button {
   align-items: baseline;
   justify-content: center;
 }
+
+.fa-check {
+  display: none !important;
+  position: absolute;
+}
+
+.todo-task.active .fa-check {
+  display: inline-flex !important;
+  position: absolute;
+  color: goldenrod;
+  top: 15px;
+  left: 8%;
+  z-index: 1000;
+}
+
