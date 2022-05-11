@@ -3,9 +3,11 @@
   position: relative;
 }
 
-span {
+.btnDelete {
   position: absolute;
   content: "\22EE";
+  background: none;
+  border: none;
   color: grey;
   right: 15px;
   cursor: move;

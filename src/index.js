@@ -12,6 +12,8 @@ userInput.addEventListener('keypress', (e) => {
   }
 });
 
+const deleteInput = document.querySelector('[data-btn-delete]');
+
 // const list = document.querySelector('[data-task-list]');
 // const clear = document.querySelector('[data-clear-all]');
 // const tasks = [];
