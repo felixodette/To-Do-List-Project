@@ -73,3 +73,7 @@ input:focus { outline: none; }
 .complete {
   display: none;
 }
+
+.todo-item {
+  border: none;
+}
