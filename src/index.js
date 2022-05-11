@@ -17,6 +17,6 @@ userInput.addEventListener('keypress', (e) => {
 const btnRefresh = document.querySelector('[data-refresh]');
 btnRefresh.addEventListener('click', () => {
   document.location.reload();
-})
+});
 
 status.clear(tasks.taskArray);
