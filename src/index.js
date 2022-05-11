@@ -1,5 +1,7 @@
 import Tasks from './modules/tasks.js';
+import Status from './modules/status.js';
 
+const status = new Status();
 const tasks = new Tasks();
 
 tasks.populate();
@@ -11,3 +13,10 @@ userInput.addEventListener('keypress', (e) => {
     userInput.value = '';
   }
 });
+
+const btnRefresh = document.querySelector('[data-refresh]');
+btnRefresh.addEventListener('click', () => {
+  document.location.reload();
+})
+
+status.clear(tasks.taskArray);
