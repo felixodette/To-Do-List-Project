@@ -12,14 +12,17 @@
 <body>
 <header></header>
 <main>
-    <section class="canvas">
+    <section class="canvas" data-container>
         <div class="card vertical-center">
-            <ul class="list-group list-group-flush" data-task-list>
-                <li class="list-group-item">Today's To Do<i class="fa fa-refresh icon-refresh"></i></li>
-                <li class="list-group-item">
-                    <input class="input-add-list" type="text" placeholder="Add to your list..." data-input>
-                </li>
-            </ul>
+            <div class="card-header">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Today's To Do<i class="fa fa-refresh icon-refresh"></i></li>
+                    <li class="list-group-item">
+                        <input class="input-add-list" type="text" placeholder="Add to your list..." data-input>
+                    </li>
+                </ul>
+            </div>
+            <ul class="list-group list-group-flush" data-task-list></ul>
             <div class="card-footer" data-clear-all>
                 Clear all completed
             </div>

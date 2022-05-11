@@ -3,9 +3,11 @@
   position: relative;
 }
 
-span {
+.btnDelete {
   position: absolute;
   content: "\22EE";
+  background: none;
+  border: none;
   color: grey;
   right: 15px;
   cursor: move;
@@ -59,8 +61,19 @@ span {
   width: 28rem;
 }
 
+.card2 {
+  top: 32.5%;
+  border: dimgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 28rem;
+}
+
 input:focus { outline: none; }
 
 .complete {
   display: none;
+}
+
+.todo-item {
+  border: none;
 }
