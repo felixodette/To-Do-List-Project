@@ -4,7 +4,8 @@
   "description": "Project Name Description the project.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
+    "watch": "jest --watch*.js",
     "build": "webpack",
     "start": "webpack serve --open"
   },
@@ -20,12 +21,15 @@
   },
   "homepage": "https://github.com/felixodette/webpack-template#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.17.12",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.14.0",
     "eslint-config-google": "^0.14.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "jet": "^0.8.0",
     "style-loader": "^3.3.1",
     "web": "^0.0.2",
     "webpack": "^5.72.0",

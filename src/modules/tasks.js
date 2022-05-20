@@ -4,7 +4,8 @@ const status = new Status();
 
 export default class Tasks {
   constructor() {
-    this.taskArray = JSON.parse(localStorage.getItem('tasks')) || [];
+    // this.taskArray = JSON.parse(localStorage.getItem('tasks')) || [];
+    this.taskArray = [];
   }
 
   populate = () => {
@@ -57,8 +58,8 @@ export default class Tasks {
       index: this.taskArray.length,
     };
     this.taskArray.push(newTask);
-    localStorage.setItem('tasks', JSON.stringify(this.taskArray));
-    this.populate();
+    // localStorage.setItem('tasks', JSON.stringify(this.taskArray));
+    // this.populate();
   }
 
   remove = (index) => {
@@ -66,13 +67,13 @@ export default class Tasks {
     for (let i = 0; i < this.taskArray.length; i += 1) {
       this.taskArray[i].index = i;
     }
-    localStorage.setItem('tasks', JSON.stringify(this.taskArray));
-    this.populate();
+    // localStorage.setItem('tasks', JSON.stringify(this.taskArray));
+    // this.populate();
   }
 
   update = (value, index) => {
     this.taskArray[index].description = value;
-    localStorage.setItem('tasks', JSON.stringify(this.taskArray));
-    this.populate();
+    // localStorage.setItem('tasks', JSON.stringify(this.taskArray));
+    // this.populate();
   }
 }
